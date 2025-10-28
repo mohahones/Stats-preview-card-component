@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(233, 47%, 7%);
+}
+
+main {
+    max-width: 320px;
+    background-color: hsl(244, 37%, 16%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 7px;
+    gap: 30px;
+}
+
+picture img {
+    width: 100%;
+    border-radius: 7px 7px 0 0;
+    display: block;
+}
+
+.moha {
+    background-color: hsl(277, 64%, 61%);
+    position: relative;
+    border-radius: 7px 7px 0 0;
+}
+
+.moha::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: hsl(277, 64%, 61%);
+    opacity: 0.5;
+    border-radius: 7px;
+}
+
+h1 {
+    font-family: 'Inter';
+    font-size: 30px;
+    text-align: center;
+    padding: 0 9% 5%;
+    color: hsl(0, 0%, 100%);
+}
+
+span {
+    color: hsl(277, 64%, 61%);
+}
+
+.moha2 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.details p {
+    font-family: 'Lexend Deca';
+    text-align: center;
+    font-size: 15px;
+    padding: 0 9%;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-weight: 200;
+    line-height: 150%;
+}
+
+h2 {
+    font-family: 'Inter';
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+}
+
+.footer p {
+    font-family: 'Lexend Deca';
+    text-align: center;
+    font-size: 15px;
+    font-weight: 200;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 10%;
+}
+
+/* media queries */
+@media (min-width:920px) {
+    main {
+        max-width: 900px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+    }
+
+    picture img {
+        width: 450px;
+        border-radius: 0 7px 7px 0;
+    }
+    .moha{
+        border-radius: 0 7px 7px 0;
+    }
+    .moha::after{
+        border-radius: 0 7px 7px 0;
+    }
+
+    .details {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+       padding: 10% 25% 0 0;
+        gap: 40px;
+    }
+    .moha2{
+        margin-left: 1%;
+    }
+    .footer h2{
+        font-size: 20px;
+        text-align: start;
+
+    }
+    .footer p{
+        font-size: 10px;
+        text-align: start;
+
+    }
+    h1 {
+        padding-right: 23%;
+        text-align: start;
+    }
+
+    .details p {
+        font-size: 12px;
+        padding-right: 25%;
+        text-align: start;
+    }
+}
